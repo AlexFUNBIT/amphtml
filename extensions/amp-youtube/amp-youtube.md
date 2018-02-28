@@ -44,8 +44,12 @@ With the responsive layout, the width and height from the example should yield c
 ```html
 <amp-youtube
     data-videoid="mGENRKrdoGY"
+    data-param-showinfo=0
+    data-param-rel=0
+    data-param-controls=0
     layout="responsive"
-    width="480" height="270"></amp-youtube>
+    width="480" height="270">
+</amp-youtube>
 ```
 
 ```html
