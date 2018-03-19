@@ -74,6 +74,29 @@ In the following example, analytics data is sent to Nielsen, a third-party analy
 </amp-analytics>
 ```
 
+### Facebook Pixel
+
+```html
+<!-- Facebook Pixel Analytics tracking -->
+<amp-analytics type="facebookpixel" id="facebook-pixel">
+    <script type="application/json">
+    {
+      "vars": {
+        "pixelId": "1760516960931795"
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview"
+        }
+      }
+    }
+    </script>
+</amp-analytics>
+<!-- End Facebook Pixel Analytics example -->
+```
+
+
 ### Sending data in-house
 
 If you have your own in-house solution for measuring user engagement, the only thing you will need to integrate AMP analytics with that solution is a URL. This is where you will send the data. You can also send data to various URLs. For example, you can send page view data to one URL, and social engagement data to another URL.
